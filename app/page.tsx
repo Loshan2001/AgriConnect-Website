@@ -7,6 +7,7 @@ import Research from '@/components/Research'
 import Documents from '@/components/Documents'
 import Technology from '@/components/Technology'
 import Team from '@/components/Team'
+import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Documents />
       <Technology />
       <Team />
+      <Contact />
       <Footer />
     </main>
   )

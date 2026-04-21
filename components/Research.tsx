@@ -393,23 +393,6 @@ export default function Research() {
         </div>
       </div>
 
-      <style>{`
-        @keyframes fadeUp {
-          from { opacity: 0; transform: translateY(16px); }
-          to   { opacity: 1; transform: translateY(0); }
-        }
-        @media (max-width: 900px) {
-          .research-cols { grid-template-columns: 1fr 1fr !important; }
-          .research-cols > div:last-child { border-top: 1px solid rgba(0,0,0,0.06); grid-column: 1 / -1; }
-        }
-        @media (max-width: 640px) {
-          .research-hero { flex-direction: column !important; }
-          .research-cols { grid-template-columns: 1fr !important; }
-          .research-cols > div { border-right: none !important; border-bottom: 1px solid rgba(0,0,0,0.06) !important; }
-          .research-cols > div:last-child { border-bottom: none !important; }
-          .tab-label { display: none; }
-        }
-      `}</style>
     </section>
   )
 }
