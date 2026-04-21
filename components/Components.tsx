@@ -46,7 +46,7 @@ const components = [
         <path d="M7 13.5L8.5 11.5M11.5 8.5L13 6.5" stroke="#185FA5" strokeWidth="1.1" strokeLinecap="round"/>
       </svg>
     ),
-    title: 'Predictive risk mapping',
+    title: 'Disease Early Warning System',
     desc: 'Combines disease records, weather data, and GPS location to forecast future outbreak zones and generate interactive risk maps for farmers.',
     tags: ['K-Means', 'DBSCAN', 'LSTM', 'XGBoost'],
     tagBg: '#E6F1FB', tagColor: '#185FA5',

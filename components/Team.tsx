@@ -19,7 +19,7 @@ const team = [
     photoBg: '#F5EFE6',
   },
   {
-    initials: 'M3', name: 'Member 3', role: 'Predictive risk mapping',
+    initials: 'M3', name: 'Member 3', role: 'Disease Early Warning System',
     gradient: 'linear-gradient(135deg, #3B82F6 0%, #185FA5 100%)',
     ringColor: 'rgba(59,130,246,0.25)',
     component: '03', compLabel: 'Risk Maps',

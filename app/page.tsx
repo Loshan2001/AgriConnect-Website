@@ -3,6 +3,7 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Components from '@/components/Components'
+import Research from '@/components/Research'
 import Documents from '@/components/Documents'
 import Technology from '@/components/Technology'
 import Team from '@/components/Team'
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Components />
+      <Research />
       <Documents />
       <Technology />
       <Team />
