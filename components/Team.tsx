@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const team = [
   {
-    initials: 'M1', name: 'Member 1', role: 'Yield & price forecasting',
+    initials: 'M1', name: 'Harishanth A.', role: 'Yield & price forecasting',
     gradient: 'linear-gradient(135deg, #1D9E75 0%, #0F6E56 100%)',
     ringColor: 'rgba(29,158,117,0.25)',
     component: '01', compLabel: 'Forecasting',
@@ -19,14 +19,14 @@ const team = [
     photoBg: '#F5EFE6',
   },
   {
-    initials: 'M3', name: 'Member 3', role: 'Disease Early Warning System',
+    initials: 'M3', name: 'Kirusanth S.', role: 'Disease Early Warning System',
     gradient: 'linear-gradient(135deg, #3B82F6 0%, #185FA5 100%)',
     ringColor: 'rgba(59,130,246,0.25)',
     component: '03', compLabel: 'Risk Maps',
     photo: null,
   },
   {
-    initials: 'M4', name: 'Member 4', role: 'Stress & deficiency detection',
+    initials: 'M4', name: 'Amarasinghe V.D', role: 'Stress & deficiency detection',
     gradient: 'linear-gradient(135deg, #B83D64 0%, #7A2243 100%)',
     ringColor: 'rgba(184,61,100,0.25)',
     component: '04', compLabel: 'Stress AI',

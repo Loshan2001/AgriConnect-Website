@@ -5,8 +5,8 @@ type Status = 'idle' | 'sending' | 'success' | 'error'
 
 const contacts = [
   { label: 'Lochan S.', role: 'Disease Identification', email: 'loshansp2001@gmail.com', gradient: 'linear-gradient(135deg, #D4870A 0%, #9A5A0A 100%)', initials: 'LS' },
-  { label: 'Kirusanth', role: 'Risk Mapping', email: 'kirusanth200110@gmail.com', gradient: 'linear-gradient(135deg, #3B82F6 0%, #185FA5 100%)', initials: 'KI' },
-  { label: 'Harishantha', role: 'Stress Analysis', email: 'harishanthanandaraj@gmail.com', gradient: 'linear-gradient(135deg, #B83D64 0%, #7A2243 100%)', initials: 'HA' },
+  { label: 'Kirusanth S.', role: 'Risk Mapping', email: 'kirusanth200110@gmail.com', gradient: 'linear-gradient(135deg, #3B82F6 0%, #185FA5 100%)', initials: 'KI' },
+  { label: 'Harishanth A.', role: 'Stress Analysis', email: 'harishanthanandaraj@gmail.com', gradient: 'linear-gradient(135deg, #B83D64 0%, #7A2243 100%)', initials: 'HA' },
 ]
 
 function Field({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) {
