@@ -3,10 +3,12 @@
 const components = [
   {
     num: '01',
+    accentColor: '#1D9E75',
+    accentBg: 'linear-gradient(135deg, #1D9E75 0%, #0F6E56 100%)',
     iconBg: '#E1F5EE',
     icon: (
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-        <polyline points="2,14 5.5,8.5 9,11 13,5.5 16,7.5" stroke="#1D9E75" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <polyline points="2,15 6,9 10,12 14,6 18,8" stroke="#1D9E75" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     title: 'Yield & price forecasting',
@@ -16,28 +18,32 @@ const components = [
   },
   {
     num: '02',
+    accentColor: '#BA7517',
+    accentBg: 'linear-gradient(135deg, #D4870A 0%, #9A5A0A 100%)',
     iconBg: '#FAEEDA',
     icon: (
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-        <circle cx="9" cy="9" r="6" stroke="#BA7517" strokeWidth="1.2"/>
-        <path d="M6.5 9.5C6.5 7.8 7.6 6.5 9 6.5s2.5 1.3 2.5 3" stroke="#BA7517" strokeWidth="1.3" strokeLinecap="round"/>
-        <circle cx="9" cy="11.5" r="1" fill="#BA7517"/>
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <circle cx="10" cy="10" r="7" stroke="#BA7517" strokeWidth="1.3"/>
+        <path d="M7 11C7 9 8.2 7.5 10 7.5s3 1.5 3 3.5" stroke="#BA7517" strokeWidth="1.4" strokeLinecap="round"/>
+        <circle cx="10" cy="13" r="1.1" fill="#BA7517"/>
       </svg>
     ),
     title: 'Disease identification',
     desc: 'Detects Purple Blotch, Downy Mildew, and Neck Rot from leaf and bulb images, classifying each into early, moderate, or severe stages.',
-    tags: ['MobileNetV2','VGG16','VGG19','InceptionV3','ResNet50','YOLOv8'],
+    tags: ['MobileNetV2', 'VGG16', 'VGG19', 'InceptionV3', 'ResNet50', 'YOLOv8'],
     tagBg: '#FAEEDA', tagColor: '#854F0B',
   },
   {
     num: '03',
+    accentColor: '#185FA5',
+    accentBg: 'linear-gradient(135deg, #1E6FC0 0%, #0F4A8A 100%)',
     iconBg: '#E6F1FB',
     icon: (
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-        <circle cx="5" cy="13" r="2" stroke="#185FA5" strokeWidth="1.1"/>
-        <circle cx="13" cy="5" r="2" stroke="#185FA5" strokeWidth="1.1"/>
-        <circle cx="9" cy="9" r="2" stroke="#185FA5" strokeWidth="1.1"/>
-        <path d="M6.3 12L8 10.5M10 7.5L11.7 6" stroke="#185FA5" strokeWidth="1" strokeLinecap="round"/>
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <circle cx="5" cy="15" r="2.5" stroke="#185FA5" strokeWidth="1.2"/>
+        <circle cx="15" cy="5" r="2.5" stroke="#185FA5" strokeWidth="1.2"/>
+        <circle cx="10" cy="10" r="2.5" stroke="#185FA5" strokeWidth="1.2"/>
+        <path d="M7 13.5L8.5 11.5M11.5 8.5L13 6.5" stroke="#185FA5" strokeWidth="1.1" strokeLinecap="round"/>
       </svg>
     ),
     title: 'Predictive risk mapping',
@@ -47,11 +53,13 @@ const components = [
   },
   {
     num: '04',
+    accentColor: '#993556',
+    accentBg: 'linear-gradient(135deg, #B83D64 0%, #7A2243 100%)',
     iconBg: '#FBEAF0',
     icon: (
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-        <path d="M9 3c0 0-4.5 3.5-4.5 7.5C4.5 13.5 6.5 15 9 15s4.5-1.5 4.5-4.5C13.5 6.5 9 3 9 3z" stroke="#993556" strokeWidth="1.2"/>
-        <path d="M9 7v6" stroke="#993556" strokeWidth="1.3" strokeLinecap="round"/>
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 3c0 0-5 4-5 8.5C5 14.5 7.2 17 10 17s5-2.5 5-5.5C15 7 10 3 10 3z" stroke="#993556" strokeWidth="1.3"/>
+        <path d="M10 8v7" stroke="#993556" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     title: 'Stress & deficiency detection',
@@ -63,64 +71,86 @@ const components = [
 
 export default function Components() {
   return (
-    <section id="components" style={{ padding: '80px 0', borderBottom: '0.5px solid rgba(0,0,0,0.08)' }}>
+    <section id="components" style={{ padding: '96px 0', background: '#fff' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px' }}>
 
-        <div style={{ marginBottom: 48 }}>
-          <div style={{ fontSize: 11, color: '#1D9E75', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 8 }}>
-            System components
+        {/* Header */}
+        <div style={{ marginBottom: 56 }}>
+          <div style={{
+            display: 'inline-flex', alignItems: 'center', gap: 7,
+            background: '#F0FDF9', border: '0.5px solid rgba(29,158,117,0.2)',
+            borderRadius: 20, padding: '5px 14px', marginBottom: 16,
+          }}>
+            <span style={{ fontSize: 11, color: '#0F6E56', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+              System components
+            </span>
           </div>
-          <h2 style={{ fontSize: 30, fontWeight: 500, letterSpacing: '-0.02em', marginBottom: 10, color: '#111' }}>
+          <h2 style={{ fontSize: 36, fontWeight: 700, letterSpacing: '-0.025em', marginBottom: 12, color: '#0D1117' }}>
             Four intelligent modules
           </h2>
-          <p style={{ fontSize: 14, color: '#6B7280', lineHeight: 1.75, maxWidth: 500 }}>
+          <p style={{ fontSize: 15, color: '#6B7280', lineHeight: 1.75, maxWidth: 520 }}>
             Each module addresses a distinct challenge in onion cultivation using machine learning,
             computer vision, and spatial analysis.
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, minmax(0, 1fr))', gap: 16 }} className="comp-grid">
+        {/* Cards grid */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, minmax(0, 1fr))', gap: 18 }} className="comp-grid">
           {components.map((c, i) => (
             <div key={i} style={{
-              border: '0.5px solid rgba(0,0,0,0.08)', borderRadius: 16,
-              padding: '22px 20px', background: '#fff',
-              transition: 'border-color 0.2s, transform 0.2s',
+              borderRadius: 18, background: '#fff', overflow: 'hidden',
+              border: '1px solid rgba(0,0,0,0.07)',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04)',
               display: 'flex', flexDirection: 'column',
+              transition: 'box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease',
             }}
               onMouseEnter={e => {
-                e.currentTarget.style.borderColor = 'rgba(0,0,0,0.15)'
-                e.currentTarget.style.transform = 'translateY(-3px)'
+                e.currentTarget.style.boxShadow = `0 8px 32px rgba(0,0,0,0.1), 0 2px 8px rgba(0,0,0,0.04)`
+                e.currentTarget.style.transform = 'translateY(-4px)'
+                e.currentTarget.style.borderColor = 'rgba(0,0,0,0.11)'
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'
+                e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04)'
                 e.currentTarget.style.transform = 'translateY(0)'
+                e.currentTarget.style.borderColor = 'rgba(0,0,0,0.07)'
               }}
             >
-              <div style={{ fontSize: 11, color: '#9CA3AF', fontWeight: 500, marginBottom: 14 }}>{c.num}</div>
+              {/* Gradient top accent */}
+              <div style={{ height: 3, background: c.accentBg }} />
 
-              <div style={{
-                width: 38, height: 38, borderRadius: 10, background: c.iconBg,
-                display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16,
-              }}>
-                {c.icon}
-              </div>
+              <div style={{ padding: '22px 20px 24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                {/* Number */}
+                <div style={{
+                  fontSize: 11, fontWeight: 700, letterSpacing: '0.08em',
+                  color: c.accentColor, marginBottom: 16, opacity: 0.7,
+                }}>{c.num}</div>
 
-              <h3 style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 8, lineHeight: 1.4 }}>
-                {c.title}
-              </h3>
-              <p style={{ fontSize: 12.5, color: '#6B7280', lineHeight: 1.7, marginBottom: 18, flex: 1 }}>
-                {c.desc}
-              </p>
+                {/* Icon */}
+                <div style={{
+                  width: 44, height: 44, borderRadius: 12, background: c.iconBg,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 18,
+                }}>
+                  {c.icon}
+                </div>
 
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, marginTop: 'auto' }}>
-                {c.tags.map(tag => (
-                  <span key={tag} style={{
-                    fontSize: 11, padding: '3px 8px', borderRadius: 5,
-                    background: c.tagBg, color: c.tagColor, fontWeight: 500,
-                  }}>
-                    {tag}
-                  </span>
-                ))}
+                <h3 style={{ fontSize: 14.5, fontWeight: 600, color: '#0D1117', marginBottom: 10, lineHeight: 1.4 }}>
+                  {c.title}
+                </h3>
+                <p style={{ fontSize: 13, color: '#6B7280', lineHeight: 1.75, marginBottom: 20, flex: 1 }}>
+                  {c.desc}
+                </p>
+
+                {/* Tags */}
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, marginTop: 'auto' }}>
+                  {c.tags.map(tag => (
+                    <span key={tag} style={{
+                      fontSize: 11, padding: '4px 9px', borderRadius: 6,
+                      background: c.tagBg, color: c.tagColor, fontWeight: 500,
+                    }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
@@ -128,7 +158,7 @@ export default function Components() {
       </div>
 
       <style>{`
-        @media (max-width: 900px) {
+        @media (max-width: 1024px) {
           .comp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
         }
         @media (max-width: 560px) {

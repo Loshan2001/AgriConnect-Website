@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,62 +9,115 @@
   --green-light: #E1F5EE;
   --green-dark: #0F6E56;
   --green-deeper: #085041;
-  --border: rgba(0,0,0,0.08);
-  --border-hover: rgba(0,0,0,0.15);
-  --surface: #F8FAF9;
+  --green-vivid: #2DD4A0;
+  --border: rgba(0,0,0,0.07);
+  --border-hover: rgba(0,0,0,0.13);
+  --surface: #F7F9F8;
   --card: #ffffff;
-  --text: #111111;
+  --text: #0D1117;
   --muted: #6B7280;
   --hint: #9CA3AF;
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.03);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.1), 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-green: 0 4px 24px rgba(29,158,117,0.35);
+  --shadow-green-sm: 0 2px 12px rgba(29,158,117,0.2);
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'DM Sans', sans-serif;
   color: var(--text);
-  background: #ffffff;
+  background: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@layer utilities {
-  .border-thin {
-    border: 0.5px solid var(--border);
-  }
-  .border-thin-hover:hover {
-    border-color: var(--border-hover);
-  }
-}
-
-/* Fade up animation */
+/* ── Animations ── */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes blob-move {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(30px, -20px) scale(1.06); }
+  66%       { transform: translate(-15px, 12px) scale(0.94); }
+}
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(29,158,117,0.5); }
+  50%       { box-shadow: 0 0 0 7px rgba(29,158,117,0); }
+}
+@keyframes shimmer-slide {
+  0%   { background-position: -400% 0; }
+  100% { background-position: 400% 0; }
+}
 
-.animate-fade-up {
-  animation: fadeUp 0.6s ease forwards;
-}
-.animate-fade-in {
-  animation: fadeIn 0.5s ease forwards;
-}
+.animate-fade-up   { animation: fadeUp 0.7s ease forwards; }
+.animate-fade-in   { animation: fadeIn 0.5s ease forwards; }
+.animate-scale-in  { animation: scaleIn 0.5s ease forwards; }
+.animate-float     { animation: float 5s ease-in-out infinite; }
+.animate-blob      { animation: blob-move 12s ease-in-out infinite; }
+.animate-pulse-dot { animation: pulse-dot 2.2s ease-in-out infinite; }
+
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-300 { animation-delay: 0.3s; }
 .delay-400 { animation-delay: 0.4s; }
 .delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
 
-.opacity-0-init {
-  opacity: 0;
+.opacity-0-init { opacity: 0; }
+
+/* ── Gradient text ── */
+.gradient-text {
+  background: linear-gradient(135deg, #1D9E75 0%, #2DD4A0 60%, #0F6E56 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gradient-text-hero {
+  background: linear-gradient(135deg, #5EEFC0 0%, #2DD4A0 50%, #1D9E75 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Cards ── */
+.card-elevated {
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+.card-elevated:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+@layer utilities {
+  .border-thin { border: 0.5px solid var(--border); }
+  .border-thin-hover:hover { border-color: var(--border-hover); }
 }
