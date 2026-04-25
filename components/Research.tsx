@@ -173,7 +173,7 @@ export default function Research() {
 
   return (
     <section id="research" style={{ padding: '96px 0', background: '#fff' }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px' }}>
+      <div className="pg-wrap" style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px' }}>
 
         {/* Section header */}
         <div style={{ marginBottom: 52 }}>
@@ -197,13 +197,15 @@ export default function Research() {
 
         {/* Tab bar */}
         <div style={{
-          display: 'flex', gap: 8, flexWrap: 'wrap',
+          display: 'flex', gap: 8,
           marginBottom: 32,
           padding: '6px',
           background: '#F7F9F8',
           borderRadius: 14,
           border: '1px solid rgba(0,0,0,0.06)',
           width: 'fit-content',
+          maxWidth: '100%',
+          overflowX: 'auto',
         }}>
           {tabs.map((tab, i) => {
             const isActive = active === i

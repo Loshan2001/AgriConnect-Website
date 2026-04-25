@@ -87,7 +87,7 @@ export default function Hero() {
         pointerEvents: 'none',
       }} />
 
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px', position: 'relative' }}>
+      <div className="pg-wrap" style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px', position: 'relative' }}>
 
         {/* Two-column layout */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }} className="hero-grid">
@@ -182,7 +182,7 @@ export default function Hero() {
           </div>
 
           {/* Right — 4 glass cards */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
+          <div className="hero-right-cards" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
             {miniCards.map((c, i) => (
               <div key={i} className={`animate-fade-up delay-${(i + 2) * 100}`} style={{
                 background: 'rgba(255,255,255,0.06)',
@@ -251,6 +251,9 @@ export default function Hero() {
         @media (max-width: 768px) {
           .hero-left h1 { font-size: 36px !important; }
           .stats-bar { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+        @media (max-width: 480px) {
+          .hero-right-cards { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
         }
       `}</style>
     </section>

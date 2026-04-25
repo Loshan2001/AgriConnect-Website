@@ -65,7 +65,7 @@ export default function Contact() {
       padding: '96px 0',
       background: 'linear-gradient(180deg, #F7F9F8 0%, #ffffff 100%)',
     }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px' }}>
+      <div className="pg-wrap" style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px' }}>
 
         {/* Section header */}
         <div style={{ marginBottom: 56 }}>
@@ -171,7 +171,7 @@ export default function Contact() {
           </div>
 
           {/* Right — form */}
-          <div style={{
+          <div className="contact-form-card" style={{
             background: '#fff', borderRadius: 22,
             border: '1px solid rgba(0,0,0,0.07)',
             boxShadow: '0 2px 8px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.05)',

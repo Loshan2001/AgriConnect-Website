@@ -134,3 +134,30 @@ body {
   .research-cols > div:last-child { border-bottom: none !important; }
   .tab-label { display: none; }
 }
+
+/* ── Mobile spacing & typography ── */
+@media (max-width: 640px) {
+  #components, #research, #documents, #technology, #team, #contact {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+  #overview {
+    padding-top: 96px !important;
+    padding-bottom: 56px !important;
+  }
+  .pg-wrap {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .pg-wrap h2 {
+    font-size: 26px !important;
+    letter-spacing: -0.02em !important;
+  }
+  .contact-form-card {
+    padding: 24px 20px !important;
+  }
+}
+@media (max-width: 480px) {
+  .hero-left h1 { font-size: 30px !important; }
+  .stats-bar { grid-template-columns: repeat(2, 1fr) !important; }
+}

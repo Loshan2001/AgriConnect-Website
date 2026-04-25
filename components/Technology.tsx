@@ -96,7 +96,7 @@ const architecture = [
 export default function Technology() {
   return (
     <section id="technology" style={{ padding: '96px 0', background: '#fff' }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px' }}>
+      <div className="pg-wrap" style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px' }}>
 
         {/* Header */}
         <div style={{ marginBottom: 56 }}>

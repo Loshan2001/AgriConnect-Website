@@ -66,7 +66,7 @@ export default function Documents() {
       padding: '96px 0',
       background: 'linear-gradient(180deg, #F7F9F8 0%, #ffffff 100%)',
     }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px' }}>
+      <div className="pg-wrap" style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px' }}>
 
         {/* Header */}
         <div style={{ marginBottom: 56 }}>
