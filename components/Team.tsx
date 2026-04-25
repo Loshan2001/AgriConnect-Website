@@ -7,7 +7,7 @@ const team = [
     gradient: 'linear-gradient(135deg, #1D9E75 0%, #0F6E56 100%)',
     ringColor: 'rgba(29,158,117,0.25)',
     component: '01', compLabel: 'Forecasting',
-    photo: null,
+    photo: '/images/Harishanth.jpg',
   },
   {
     initials: 'M2', name: 'Lochan S.', role: 'Disease identification',
@@ -23,14 +23,14 @@ const team = [
     gradient: 'linear-gradient(135deg, #3B82F6 0%, #185FA5 100%)',
     ringColor: 'rgba(59,130,246,0.25)',
     component: '03', compLabel: 'Risk Maps',
-    photo: null,
+    photo: '/images/kirusanth.jpeg',
   },
   {
     initials: 'M4', name: 'Amarasinghe V.D', role: 'Stress & deficiency detection',
     gradient: 'linear-gradient(135deg, #B83D64 0%, #7A2243 100%)',
     ringColor: 'rgba(184,61,100,0.25)',
     component: '04', compLabel: 'Stress AI',
-    photo: null,
+    photo: '/images/vinuki.jpg',
   },
 ]
 
