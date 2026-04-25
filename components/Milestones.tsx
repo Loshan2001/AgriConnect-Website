@@ -3,7 +3,7 @@
 const milestones = [
   {
     date: '27th June 2025',
-    title: 'TAF Submission Deadline',
+    title: 'TAF Submission',
     desc: 'Topic Approval Form submitted to the department for research topic registration and academic approval.',
     marks: 2,
     done: true,
