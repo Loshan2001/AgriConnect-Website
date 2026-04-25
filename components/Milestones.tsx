@@ -211,16 +211,6 @@ export default function Milestones() {
         </div>
       </div>
 
-      <style>{`
-        @media (max-width: 640px) {
-          .milestone-line { left: 19px !important; }
-          .milestone-left { width: 20px !important; }
-          .milestone-left > div { right: -10px !important; width: 18px !important; height: 18px !important; }
-          .milestone-content { padding-left: 28px !important; }
-          .milestone-content h3 { font-size: 20px !important; }
-          .milestone-row { margin-bottom: 40px !important; }
-        }
-      `}</style>
     </section>
   )
 }
