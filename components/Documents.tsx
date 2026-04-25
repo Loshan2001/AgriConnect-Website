@@ -1,5 +1,6 @@
 'use client'
 
+
 const docs = [
   {
     type: 'Proposal', typeBg: '#E1F5EE', typeColor: '#0F6E56',
@@ -7,7 +8,7 @@ const docs = [
     iconStroke: '#fff',
     title: 'Project proposal',
     sub: 'Scope, objectives & research questions',
-    href: '#',
+    href: "https://drive.google.com/drive/folders/1nBQCEl_Mumdcg76JM38jV6j7z9Ba01RV?usp=share_link",
   },
   {
     type: 'Report', typeBg: '#E6F1FB', typeColor: '#185FA5',
@@ -15,7 +16,7 @@ const docs = [
     iconStroke: '#fff',
     title: 'Progress Presentation I',
     sub: 'Literature review & methodology',
-    href: '#',
+    href: "https://drive.google.com/drive/folders/1usqAFoDsTw3EoKt5TBruQzohApfRvCul?usp=share_link",
   },
   {
     type: 'Report', typeBg: '#E6F1FB', typeColor: '#185FA5',
@@ -23,7 +24,7 @@ const docs = [
     iconStroke: '#fff',
     title: 'Progress Presentation II',
     sub: 'Implementation & early results',
-    href: '#',
+    href: "https://drive.google.com/drive/folders/1YaBzO0XA1qKXvoi0TNFIVmFYwG3dhp1D?usp=share_link",
   },
   {
     type: 'Slides', typeBg: '#FAEEDA', typeColor: '#854F0B',
@@ -31,7 +32,7 @@ const docs = [
     iconStroke: '#fff',
     title: 'Final presentation',
     sub: 'Viva & research poster slides',
-    href: '#',
+    href: "https://drive.google.com/drive/folders/1uIV3W-fnYC4FzmwD9k1YCIwApouLMgKv?usp=share_link",
   },
   {
     type: 'Paper', typeBg: '#EEEDFE', typeColor: '#534AB7',
@@ -39,7 +40,7 @@ const docs = [
     iconStroke: '#fff',
     title: 'Final research paper',
     sub: 'Publication-ready full report',
-    href: '#',
+    href: "https://drive.google.com/drive/folders/1WYqbVoKxVPXnsK2pNAPtQ771gyJ8T2uQ?usp=share_link",
   },
   {
     type: 'Log', typeBg: '#F1F5F9', typeColor: '#475569',
@@ -47,7 +48,7 @@ const docs = [
     iconStroke: '#fff',
     title: 'Status documents',
     sub: 'Weekly meeting notes & logs',
-    href: '#',
+    href: "https://drive.google.com/drive/folders/1imjo2-9lqua65KSg-cg1Ab4iPCiRkp0K?usp=share_link",
   },
 ]
 
@@ -89,7 +90,7 @@ export default function Documents() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 14 }} className="docs-grid">
           {docs.map((d, i) => (
-            <a key={i} href={d.href} style={{
+            <a key={i} href={d.href} target="_blank" rel="noopener noreferrer" style={{
               display: 'flex', alignItems: 'center', gap: 16,
               background: '#fff',
               border: '1px solid rgba(0,0,0,0.07)',
