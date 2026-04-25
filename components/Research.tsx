@@ -394,20 +394,6 @@ export default function Research() {
                   </p>
                 </div>
               ))}
-              <div style={{
-                marginTop: 8,
-                border: '1px solid rgba(59,130,246,0.18)',
-                borderRadius: 18,
-                overflow: 'hidden',
-                background: '#F8FBFF',
-                boxShadow: '0 8px 24px rgba(15, 23, 42, 0.06)',
-              }}>
-                <img
-                  src="/images/methodology.png"
-                  alt="Onion crop surveillance ecosystem methodology diagram"
-                  style={{ width: '100%', height: 'auto', display: 'block' }}
-                />
-              </div>
             </div>
           ) : t.objectiveParts ? (
             <div style={{
