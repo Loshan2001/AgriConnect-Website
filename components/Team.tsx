@@ -14,7 +14,7 @@ const team = [
     gradient: 'linear-gradient(135deg, #D4870A 0%, #9A5A0A 100%)',
     ringColor: 'rgba(212,135,10,0.25)',
     component: '02', compLabel: 'Disease AI',
-    photo: '/images/lochan.jpg',
+    photo: '/images/Lochan.jpg',
     photoFit: 'contain' as const,
     photoBg: '#F5EFE6',
   },
