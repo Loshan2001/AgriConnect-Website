@@ -5,9 +5,9 @@ type Status = 'idle' | 'sending' | 'success' | 'error'
 
 const contacts = [
   { label: 'Lochan S.', role: 'Disease Identification', email: 'loshansp2001@gmail.com', gradient: 'linear-gradient(135deg, #D4870A 0%, #9A5A0A 100%)', initials: 'LS' },
-  { label: 'Kirusanth S.', role: 'ATD Early Warning', email: 'kirusanth200110@gmail.com', gradient: 'linear-gradient(135deg, #3B82F6 0%, #185FA5 100%)', initials: 'KI' },
+  { label: 'Kirusanth S.', role: 'ATD Early Warning', email: 'kirusanth200110@gmail.com', gradient: 'linear-gradient(135deg, #3B82F6 0%, #185FA5 100%)', initials: 'KS' },
   { label: 'Harishanth A.', role: 'Yield & Onion Price Prediction', email: 'harishanthanandaraj@gmail.com', gradient: 'linear-gradient(135deg, #B83D64 0%, #7A2243 100%)', initials: 'HA' },
-  { label: 'Amarasingle V. D.', role: 'Soil Nutrient Analysis', gradient: 'linear-gradient(135deg, #B83D64 0%, #7A2243 100%)', initials: 'AM' },
+  { label: 'Amarasinghe V. D.', role: 'Soil Nutrient Analysis', gradient: 'linear-gradient(135deg, #534AB7 0%, #3B36A8 100%)', initials: 'AV' },
 ]
 
 function Field({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) {
