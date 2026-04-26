@@ -322,6 +322,8 @@ export default function Contact() {
           .form-row { grid-template-columns: 1fr !important; }
         }
       `}</style>
+      
     </section>
+    
   )
 }
