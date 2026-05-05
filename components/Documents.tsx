@@ -50,6 +50,14 @@ const docs = [
     sub: 'Weekly meeting notes & logs',
     href: "https://drive.google.com/drive/folders/1imjo2-9lqua65KSg-cg1Ab4iPCiRkp0K?usp=share_link",
   },
+    {
+    type: 'Log', typeBg: '#F1F5F9', typeColor: '#475569',
+    iconBg: 'linear-gradient(135deg, #5482c2 0%, #475569 100%)',
+    iconStroke: '#fff',
+    title: 'Log book',
+    sub: 'Weekly meeting notes & logs',
+    href: "https://drive.google.com/file/d/1FBKyXH5_HvPe5I6YwBjBXf0DFUsycTLv/view?usp=sharing",
+  },
 ]
 
 function DocIcon({ stroke }: { stroke: string }) {
