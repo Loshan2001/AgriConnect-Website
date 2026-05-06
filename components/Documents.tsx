@@ -32,7 +32,7 @@ const docs = [
     iconStroke: '#fff',
     title: 'Final presentation',
     sub: 'Viva & research poster slides',
-    href: "https://drive.google.com/drive/folders/1uIV3W-fnYC4FzmwD9k1YCIwApouLMgKv?usp=share_link",
+    href: "https://drive.google.com/drive/folders/1l2nhB7RSN7BCV4T3yC-_qPuTPyFUiStR?usp=share_link",
   },
   {
     type: 'Paper', typeBg: '#EEEDFE', typeColor: '#534AB7',
@@ -49,6 +49,14 @@ const docs = [
     title: 'Status documents',
     sub: 'Weekly meeting notes & logs',
     href: "https://drive.google.com/drive/folders/1imjo2-9lqua65KSg-cg1Ab4iPCiRkp0K?usp=share_link",
+  },
+   {
+    type: 'Report', typeBg: '#F1F5F9', typeColor: '#475569',
+    iconBg: 'linear-gradient(135deg, #43a2da 0%, #0b517a 100%)',
+    iconStroke: '#fff',
+    title: 'Thesis',
+    sub: 'final report details',
+    href: "https://drive.google.com/drive/folders/1vUcTJCoG-S5ZaZ-qxc7Fm3Unpv-0CC4V?usp=sharing",
   },
   {
     type: 'Log', typeBg: '#F1F5F9', typeColor: '#475569',
