@@ -88,6 +88,11 @@ const milestones = [
 ]
 
 export default function Milestones() {
+  const lastDoneIndex = milestones.reduce((acc, m, i) => (m.done ? i : acc), -1)
+  const greenPercent = lastDoneIndex >= 0
+    ? Math.round(((lastDoneIndex + 1) / milestones.length) * 100)
+    : 0
+
   return (
     <section id="milestones" style={{
       padding: '96px 0',
@@ -123,7 +128,7 @@ export default function Milestones() {
             left: 179,
             top: 12, bottom: 12,
             width: 2,
-            background: 'linear-gradient(to bottom, #1D9E75 43%, #1D2A1E 43%)',
+            background: `linear-gradient(to bottom, #1D9E75 ${greenPercent}%, #1D2A1E ${greenPercent}%)`,
           }} />
 
           {milestones.map((m, i) => (
