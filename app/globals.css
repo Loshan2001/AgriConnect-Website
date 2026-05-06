@@ -37,6 +37,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p { text-align: justify; }
+
 /* ── Animations ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(28px); }
