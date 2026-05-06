@@ -55,14 +55,14 @@ const milestones = [
     title: 'Final Checklist Submission',
     desc: 'Submission of the final project checklist confirming all deliverables and documentation are complete.',
     marks: 2,
-    done: false,
+    done: true,
   },
   {
     date: '27 April – 6 May 2026',
     title: 'Website Evaluation & Logbook Submission',
     desc: 'Final evaluation of the project website along with submission of logbook documenting the full research journey.',
     marks: 3,
-    done: false,
+    done: true,
   },
   {
     date: '8th May 2026',
