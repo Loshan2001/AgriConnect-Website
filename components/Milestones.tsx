@@ -41,14 +41,14 @@ const milestones = [
     title: 'Website Submission',
     desc: 'Research project website submitted for evaluation showcasing the system, research team, and all artifacts.',
     marks: 2,
-    done: false,
+    done: true,
   },
   {
     date: '27 April – 6 May 2026',
     title: 'Final Presentation & Viva',
     desc: 'Comprehensive final presentation and oral examination before the evaluation panel covering all system components.',
     marks: 20,
-    done: false,
+    done: true,
   },
   {
     date: '30th April 2026',
